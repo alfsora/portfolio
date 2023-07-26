@@ -50,6 +50,11 @@ nav {
     font-weight: bold;
 }
 
+.stylist {
+    display:flex;
+    align-items: center;
+}
+
 a:link {
     text-decoration: none;
     color:#D0604C;
