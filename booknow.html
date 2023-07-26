@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content:"width-device-width, initial-scale=1">
+        <title>Hair Day</title>
+        <meta name="description" content="a boutique hair salon specializes in cut, color and styling.">
+        <meta name="author" content="hair day salon">
+
+        <link rel="stylesheet" href="style.css">
+    </head>
+    
+    <body>
+        <header>
+            <img src="Artboard 19.png" height="75px">
+        </header>
+        <nav>
+            <div class="navbar">
+                <div class="navbaritem current-page">
+                    <a href="index.html">Home</a></div>
+                <div class="navbaritem">
+                    <a href="team.html">The Team</a></div>
+                <div class="navbaritem">
+                    <a href="blog.html">Blog</a></div>
+                <div class="navbaritem">
+                    <a href="booknow.html">
+                        <button type="button" class="button"><strong>Book a Reservation</strong></button>
+                    </a>
+                </div>
+            </div>
+        </nav>
+        <main>
+            <form action="reservation.php" method="post">
+                <div class="elem-group">
+                  <label for="name">Your Name</label>
+                  <input type="text" id="name" name="visitor_name" placeholder="John Doe" pattern=[A-Z\sa-z]{3,20} required>
+                </div>
+                <div class="elem-group">
+                  <label for="email">Your E-mail</label>
+                  <input type="email" id="email" name="visitor_email" placeholder="john.doe@email.com" required>
+                </div>
+                <div class="elem-group">
+                  <label for="phone">Your Phone</label>
+                  <input type="tel" id="phone" name="visitor_phone" placeholder="498-348-3872" pattern=(\d{3})-?\s?(\d{3})-?\s?(\d{4}) required>
+                </div>
+                <hr>
+                <div class="elem-group inlined">
+                  <label for="adult">Number of Customers</label>
+                  <input type="number" id="adult" name="total_adults" placeholder="2" min="1" max="8" required>
+                </div>
+                <div class="elem-group inlined">
+                  <label for="bookdate">Designated date</label>
+                  <input type="date" id="checkin-date" name="checkin" required>
+                </div>
+                <div class="elem-group">
+                    <p>Select Services</p>
+                        <label for="haircut"> Hair Cutting</label><br>
+                        <input type="checkbox" id="cutting" name="cutting" value="Cut">
+                        <label for="hairstyling"> Hair Styling</label><br>
+                        <input type="checkbox" id="styling" name="styling" value="Styling">
+                        <label for="coloring"> Balayage/Ombre/Bleach/Highlight</label><br>
+                        <input type="checkbox" id="color" name="color" value="Color">
+                        <label for="perm"> Perming</label><br>
+                        <input type="checkbox" id="perm" name="perm" value="Perm">
+                        <label for="extension"> Hair Extension</label><br>
+                        <input type="checkbox" id="extension" name="extension" value="Extension">
+                        <label for="rebonding"> Rebonding</label><br>
+                        <input type="checkbox" id="rebonding" name="rebonding" value="Rebonding">
+                        <label for="treatment"> Treatment</label><br>
+                        <input type="checkbox" id="treatment" name="treatment" value="Treatment">            
+                  </select>
+                </div>
+                <hr>
+                <div class="elem-group">
+                  <label for="message">Anything Else?</label>
+                  <textarea id="message" name="visitor_message" placeholder="Tell us anything else that might be important." required></textarea>
+                </div>
+                <a href="successbook.html">
+                    <button type="button" class="button"><strong>Book Now</strong></button>
+              </form>
+        </main>
+        <br/>
+        <hr/>
+        <footer>
+            <div class="footercontainer">
+                <img src="Artboard 19.png" class="footerimage">
+            </div>
+            <div class="copyright">
+                <p>Hair Day © 2023</p>
+            </div>
+        </footer>
+    </body>
+</html>
