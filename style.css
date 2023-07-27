@@ -4,7 +4,6 @@ body {
     font-size: 14px;
     margin: 0 auto;
     width: 100%;
-    text-align: center;
     max-width: 1000px;
 }
 
@@ -13,6 +12,8 @@ main {
     padding: 0;
     margin: 0;
 }
+
+
 
 h1 {
     font-size: 2.5rem;
@@ -39,6 +40,7 @@ nav {
 
 .navbar {
     display: flex;
+    text-align: center;
     align-items: center;
     width: 100%;
 }
@@ -122,11 +124,13 @@ a:link {
 }
 
 .sectpromotional {
+    text-align: center;
     display: flex;
     width: 100%;
 }
 
 .promotional {
+    text-align: center;
     width: 100%;
     margin: 0px;
 }
@@ -140,6 +144,7 @@ section {
 
 .row1 {
     display: flex;
+    text-align: center;
     align-content:space-around;
 }
 
@@ -173,15 +178,8 @@ section {
     border: none;
     color: white;
     padding: 7px 15px;
-    text-align: center;
-    display: inline-block;
     font-size: 16px;
     border-radius: 5px;
-}
-
-.elem-group {
-    display: flex;
-    margin: 20px 50px 20px 50px;
 }
 
 input, select, textarea {
@@ -192,6 +190,9 @@ input, select, textarea {
     font-size: 14px;
     width: 100%;
     padding: 7px;
+}
+
+.bookform {
 }
 
 #message {
@@ -217,10 +218,6 @@ label, input {
     display: block;
 }
 
-.selection {
-    list-style: none;
-}
-
 .textbox {
     color: #FFFBF2;
     background-color: #D0604C;
@@ -231,23 +228,6 @@ label, input {
     margin: 0px 10px 15px 20px;
 }
 
-* {
-    box-sizing: border-box;
-  }
-
-  .blockimage {
-    width: 100%;
-    padding: 20px;
-    border-radius: 10px;
-  }
-  
-  .card {
-    border: 1px solid #D0604C;
-    background-color:#ffffff;
-    padding: 10px;
-    margin-top: 20px;
-    margin-bottom: 30px
-  }
 
 footer {
     display: flex;
@@ -273,3 +253,26 @@ footer {
 footer div {
     flex-grow: 1;
 }
+
+* {
+    box-sizing: border-box;
+  }
+
+  .blogimage {
+    width: 100%;
+    padding: 20px;
+  }
+  
+  .card {
+    text-align: center;
+    border: 1px solid #D0604C;
+    background-color:#ffffff;
+    padding: 25px;
+    margin-top: 20px;
+    margin-bottom: 30px;
+  }
+
+  .bookform {
+    display: flex;
+    
+  }
