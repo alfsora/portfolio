@@ -243,9 +243,16 @@ footer {
     display: flex;
   }
   
-  .column {
-    flex: 50%;
-  }
+.column1 {
+    padding-left: 8%;
+    width: 60%;
+}
+.column1 img{
+    width: 90%;
+}
+.column2 {
+    width: 40%;
+}
 
 .copyright {
     color: #D0604C;
