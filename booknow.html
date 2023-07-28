@@ -30,62 +30,88 @@
             </div>
         </nav>
         <main>
-            <div class="bookform"></div>
-                <form action="reservation.php" method="post">
-                   <div class="elem-group">
-                        <label for="name">Name<span class="required-field"></span></label>
-                        <input type="text" id="name" name="visitor_name" placeholder="Name" pattern=[A-Z\sa-z]{3,20} required>
-                        <br>
-                    </div>
-                    <div class="elem-group">
-                        <label for="email">E-mail<span class="required-field"></span></label>
-                        <input type="email" id="email" name="visitor_email" placeholder="name@mail.com" required>
-                        <br>
-                    </div>
-                    <div class="elem-group">
-                        <label for="phone">Phone Number<span class="required-field"></span></label>
-                        <input type="tel" id="phone" name="visitor_phone" placeholder="0000-0000-000" pattern=(\d{3})-?\s?(\d{3})-?\s?(\d{4}) required>
-                        <br>
-                    </div>
-                    <div class="elem-group">
-                        <label for="adult">Number of Customers<span class="required-field"></span></label>
-                        <input type="number" id="adult" name="total_adults" placeholder="1" min="1" max="8" required>
-                        <br>
-                    </div>
-                    <div class="elem-group">
-                        <label for="bookdate">Designated date<span class="required-field"></span></label>
-                        <input type="date" id="checkin-date" name="checkin" required>
-                        <br>
-                    </div>
-                    <div class="elem-group">
-                        <p>Select Services<span class="required-field"></span></p>
-                        <input type="checkbox" id="cutting" name="cutting" value="Cut">
-                        <label> Hair Cutting</label>
-                        <input type="checkbox" id="styling" name="styling" value="Styling">
-                        <label> Hair Styling</label>
-                        <input type="checkbox" id="color" name="color" value="Color">
-                        <label>Balayage/Ombre/Bleach/Highlight</label>
-                        <input type="checkbox" id="perm" name="perm" value="Perm">
-                        <label> Perming</label>
-                        <input type="checkbox" id="extension" name="extension" value="Extension">
-                        <label>Hair Extension</label>
-                        <input type="checkbox" id="rebonding" name="rebonding" value="Rebonding">
-                        <label>Rebonding</label>
-                        <input type="checkbox" id="treatment" name="treatment" value="Treatment">
-                        <label>Treatment</label>
-                        </ul>
-                        <br>
-                        <br>
+            <div class="row">
+                <div class="column"></div>
+                    <img src="lindsay-cash-QZ8aqXvP8LQ-unsplash.png">
+                <div class="column"></div>
+                    <div class="bookform">
+                        <form action="reservation.php" method="post">
+                            <div class="elem-group">
+                                <label for="name">Name<span class="required-field"></span></label>
+                                <input type="text" id="name" name="visitor_name" placeholder="Name" pattern=[A-Z\sa-z]{3,20} required>
+                            <br>
+                            </div>
+                            <div class="elem-group">
+                                <label for="email">E-mail<span class="required-field"></span></label>
+                                <input type="email" id="email" name="visitor_email" placeholder="name@mail.com" required>
+                            <br>
+                            </div>
+                            <div class="elem-group">
+                                <label for="phone">Phone Number<span class="required-field"></span></label>
+                                <input type="tel" id="phone" name="visitor_phone" placeholder="0000-0000-000" pattern=(\d{3})-?\s?(\d{3})-?\s?(\d{4}) required>
+                            <br>
+                            </div>
+                            <div class="elem-group">
+                                <label for="adult">Number of Customers<span class="required-field"></span></label>
+                                <input type="number" id="adult" name="total_adults" placeholder="1" min="1" max="8" required>
+                            <br>
+                            </div>
+                            <div class="elem-group">
+                                <label for="bookdate">Designated date<span class="required-field"></span></label>
+                                <input type="date" id="checkin-date" name="checkin" required>
+                            <br>
+                            </div>
+                            <div class="elem-group">
+                                <p>Select Services<span class="required-field"></span></p>
+                                <label class="container">Hair Cutting
+                                    <input type="checkbox">
+                                    <span class="checkmark"></span>
+                                </label>
+                                <label class="container">Hair Styling
+                                    <input type="checkbox">
+                                    <span class="checkmark"></span>
+                                </label>
+                                <label class="container">Rebonding
+                                    <input type="checkbox">
+                                    <span class="checkmark"></span>
+                                </label>
+                                <label class="container">Perming
+                                    <input type="checkbox">
+                                    <span class="checkmark"></span>
+                                </label>
+                                <label class="container">Hair Extension
+                                    <input type="checkbox">
+                                    <span class="checkmark"></span>
+                                </label>
+                                <label class="container">Balayage/Ombre/Bleach/Highlight
+                                    <input type="checkbox">
+                                    <span class="checkmark"></span>
+                                </label>
+                                <label class="container">Treatment
+                                    <input type="checkbox">
+                                    <span class="checkmark"></span>
+                                </label>
+                                <label class="container">Manicure
+                                    <input type="checkbox">
+                                    <span class="checkmark"></span>
+                                </label>
+                                <label class="container">Pedicure
+                                    <input type="checkbox">
+                                    <span class="checkmark"></span>
+                                </label>
+                            </div>
+                            <br>
+                            <div class="elem-group">
+                                <label for="message">Special Request</label>
+                                <textarea id="message" name="visitor_message" placeholder="Please write down any special request."></textarea>
+                            </div>
+                            <a href="successbook.html">
+                                <button type="button" class="booknow"><strong>Book Now</strong></button>
+                            </a>
+                            </div>
+                        </form>
                     </div>
                 </div>
-                <div class="elem-group">
-                    <label for="message">Special Request</label>
-                    <textarea id="message" name="visitor_message" placeholder="Please write down any special request." required></textarea>
-                </div>
-                    <a href="successbook.html">
-                        <button type="button" class="booknow"><strong>Book Now</strong></button>
-                    </a>
-                </form>
             </div>
         </main>
         <br/>

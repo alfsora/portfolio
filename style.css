@@ -13,8 +13,6 @@ main {
     margin: 0;
 }
 
-
-
 h1 {
     font-size: 2.5rem;
     justify-content: flex-start;
@@ -192,11 +190,8 @@ input, select, textarea {
     padding: 7px;
 }
 
-.bookform {
-}
-
 #message {
-    padding: 30px;
+    padding: 100px;
 }
 .stylist1 {
     margin-top: 35px;
@@ -244,6 +239,14 @@ footer {
     padding-left: 10px;
 }
 
+.row {
+    display: flex;
+  }
+  
+  .column {
+    flex: 50%;
+  }
+
 .copyright {
     color: #D0604C;
     text-align: right;
@@ -274,5 +277,73 @@ footer div {
 
   .bookform {
     display: flex;
-    
+  }
+
+  /* Customize the label (the container) */
+.container {
+    display: block;
+    position: relative;
+    padding-left: 35px;
+    margin-bottom: 12px;
+    font-size: 14px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+  }
+  
+  /* Hide the browser's default checkbox */
+  .container input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+  }
+  
+  /* Create a custom checkbox */
+  .checkmark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 20px;
+    width: 20px;
+    border-style: solid;
+    border-width: 1px;
+    border-color: #777;
+    background-color: #ffffff;
+    border-radius: 5px;
+  }
+  
+  .container:hover input ~ .checkmark {
+    background-color: #ccc;
+  }
+  
+  .container input:checked ~ .checkmark {
+    background-color:#D0604C;
+    border-style: none;
+  }
+  
+  .checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+  }
+  
+  .container input:checked ~ .checkmark:after {
+    display: block;
+  }
+  
+  /* Style the checkmark/indicator */
+  .container .checkmark:after {
+    left: 6px;
+    top: 1px;
+    width: 5px;
+    height: 10px;
+    border-style: solid;
+    border: solid white;
+    border-width: 0 3px 3px 0;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
   }
