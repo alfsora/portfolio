@@ -253,6 +253,18 @@ footer {
     padding-right: 10px;
 }
 
+.thankyou {
+    text-align: center;
+    margin-left: 50px;
+    margin-right: 50px;
+    margin-bottom: 20px;
+}
+
+.thankyou > .hairdayteam {
+    color:#D0604C;
+    font-style: italic;
+}
+
 footer div {
     flex-grow: 1;
 }
