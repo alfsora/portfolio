@@ -134,9 +134,10 @@ a:link {
 
 section {
     display: flex;
-    align-items: center;
     width: 100%;
     margin: 0px;
+    vertical-align: top;
+    padding-bottom: 40px;
 }
 
 .row1 {
@@ -191,10 +192,9 @@ input, select, textarea {
 
 #message {
     padding: 10px;
-}
-.stylist1 {
-    margin-top: 35px;
-    width: 100%;
+    border-radius: 5px;
+    cursor: pointer;
+    height: 150px;
 }
 
 article {
